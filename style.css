@@ -1,0 +1,546 @@
+/*
+    bg (liens menu non cliqué) : #FFFBF7
+    bg2 (footer/header): #E2D2C3
+    bg3 (articles similaires avec opacité 20%): rgba(226, 210, 195, .2)
+    ecriture : #353F27
+    navigation : #1B5734
+*/
+/*=============================================================================
+GENERAL
+=============================================================================*/
+html, body{
+    padding: 0;
+    margin:0;
+    height:100%;
+}
+body{
+    color: #353F27;
+    background: #FFFBF7;
+    font-family: 'Montserrat' ,sans-serif ;
+    font-size: 18px;
+}
+h1{
+    font-family: 'Montserrat' , sans-serif ;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 48px;
+    color: #353F27;
+}
+h2, h3{
+    text-transform: uppercase;
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+}
+h2{
+    font-size: 36px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+h3{
+    font-size: 24px;
+    
+}
+a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #1B5734;
+    list-style-type: none;
+   
+}
+li{list-style-type: none;}
+p, div {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*=============================================================================
+LAYOUT
+=============================================================================*/
+.wrapper{
+    width: 1200px;
+    margin: auto; 
+}
+
+.image{
+    font-style: italic;
+}
+.col{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu ul{
+    padding: 0;
+    margin: 0;
+}
+/*=============================================================================
+MODULES
+=============================================================================*/
+/*haut de page*/
+
+
+.entete{
+    background:#E2D2C3 ;
+    padding: 70px 0;
+  
+}
+.menu{
+    background: #1B5734;
+    
+}
+.menu a{
+    display: block;
+    color: #fff;
+    padding: 20px 30px;
+}
+.recherche a{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.menu a:hover{
+    background:#fff;
+    color:#1B5734;
+}
+.titre{
+   
+    margin-left: 40px;
+    margin-top: 0;
+    margin-right: 40px;
+    background-image: url(image/icones/Feuille_gauche.svg);
+    background-repeat: no-repeat;
+    background-position-x:right;
+    background-position-y: 20px;
+}
+.devise{
+    font-size: 24px;
+    align-self: flex-start;
+}
+
+h1{
+    margin: 0 0 10px 0;
+    font-style: italic;
+}
+li.icon{
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+
+}
+
+.icon a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+li.icon:nth-child(-n+2){
+    margin-right: 15px;
+}
+li.icon .block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.recherche:hover{
+    cursor: pointer;
+    background-color: #fff;
+}
+.recherche:hover .loupe{
+    fill: #1B5734;
+}
+.recherche{
+    margin: 0;
+}
+.ariane{
+    display: flex;
+    margin-top:10px
+
+}
+.article{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.titre2{
+    text-align: center;
+}
+.titre2 h2::before{
+    content: url(image/icones/Feuille_gauche.svg);
+    position: relative;
+    right: 10px;
+}
+.titre2 h2::after{
+    content:url(image/icones/Feuille_droite.svg);
+    position: relative;
+    left: 10px;
+}
+.definition{
+    margin-left: 60px;
+    margin-right: 70px;
+}
+section.car{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.bouton input{
+    background: #1B5734;
+    color: #fff;
+    padding: 20px;
+    font-size: 24px;
+}
+.bouton input:hover{
+    cursor: pointer;
+}
+
+.caracteristique{
+    position: relative;
+    bottom: 55px;
+}
+.prix{
+    color: #000000;
+    font-size: 36px;
+    font-weight: bold;
+    position: relative;
+    bottom: 20px;
+}
+.menu_burger{
+    display: none;
+}
+
+.centre{
+    padding-bottom: 100px;
+}
+.similaire h3::before{
+    content: url(image/icones/Feuille_gauche.svg);
+    position: relative;
+    right: 5px;
+}
+.similaire h3{
+    margin-top: 0;
+    margin-left: 10px;
+    position: relative;
+    bottom: 10px;
+    left: 20px;
+    
+
+}
+
+
+.contenaire{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(226, 210, 195, 0.2);
+
+}
+.similaire{
+    padding-top: 50px;
+    background: rgba(226, 210, 195, 0.2);;
+    padding-bottom: 50px;
+
+}
+.block1{
+    display: flex;
+    justify-content: space-between;
+    width: 386px;
+    background: #ffffff;
+}
+
+
+footer{
+    background: #E2D2C3;
+    padding-bottom: 40px;
+}
+.groupe{
+    display: flex; 
+    justify-content: space-around;
+}
+ 
+.menu1 ul{
+    padding-left: 0;
+    margin-top: 30px;
+}
+.menu1 li{
+    line-height: 2em;
+}
+.menu2 ul{
+    padding-left: 0;
+    margin-top: 30px;
+}
+.menu2 li{
+    line-height: 2em;
+}
+.menu3 ul{
+    margin-top: 30px;
+}
+.reseau ul{
+    display: flex;
+    justify-content: space-between;
+}
+.bas_de_page{
+    text-align: center;
+    padding-top: 30px;
+}
+.ariane a::after{
+    content: ">";
+}
+
+/* feuille de contact*/
+.localisation{
+    display: flex;
+}
+.contact{
+    padding-bottom: 20px;
+}
+.carte{
+    padding-right: 70px;
+}
+.info p{
+    font-size: 32px;
+    padding-bottom: 60px;
+}
+.formulaire{
+    padding-top: 20px;
+    background: rgba(226, 210, 195, 0.2);
+    padding-bottom: 30px;
+}
+.formulaire h3::before{
+    content: url(image/icones/Feuille_gauche.svg);
+    position: relative;
+    right: 7px;
+}
+.champs{
+    padding-bottom: 20px;
+}
+label{
+    display: block;
+    width: 200px;
+    display: inline-block;
+}
+input[type=submit]{
+    background: #1B5734;
+    color: #fff;
+    padding: 10px;
+    font-size: 24px;
+}
+
+input{ 
+    margin-top:15px
+}
+input#prenom, input#nom, input#telephone, input#mail{
+    padding: 5px;
+    padding-right: 20px;
+}
+
+.droite{
+    margin-right: 200px;
+}
+
+.col2{
+    display: flex;
+    justify-content: space-between;
+}
+
+.adroite{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 200px;
+}
+
+/*media queries*/
+@media all and (max-width:1280px){
+    .wrapper{
+        width: auto;
+        margin: auto;
+    }
+    .entete .wrapper{
+        justify-content: space-evenly;
+    }
+    .position{
+        display: none;
+    }
+    section.car{
+        width: auto;
+    }
+    .article{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .definition{
+        padding-bottom: 55px;
+    }
+    .caracteristique p{
+        margin: auto;
+        width: 600px;
+    }
+    .image{
+        margin: auto;
+        width: 600px;
+        
+    }
+    .contenaire{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    
+    .truc{
+       margin-top: 30px;
+    }
+    .caracteristique {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
+    /* contact*/
+    .formulaire{
+        padding-left: 20px;
+    }
+  
+}
+@media all and (max-width:960px){
+    .wrapper{
+        width: auto;
+    }
+    .titre{
+        display: none;
+    }
+    .menu_principale{
+        display: none;
+    }
+    nav.menu div.wrapper{
+        justify-content: flex-end;
+        justify-content: space-between;
+    }
+    .menu_burger{
+        display: flex;
+    }
+    .ariane{
+        display: none;
+    }
+    .caracteristique p{
+        width: 90%;
+    }
+    .image{
+        width: 90%;
+        
+    }
+    div.definition img{
+        width: 90%;
+        height: auto;
+        padding-top: 20px;
+    }
+    .bouton{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        padding-top: 20px;
+    }
+    .machin, .block1 {
+        max-width: 401px;
+        margin-bottom: 30px;
+        width: 90%;
+    }
+    .machin img{
+        max-width: 401px;
+        width: 90%;
+        height: auto;
+    }
+    .patate{
+        max-width: 386px;
+        width: 90%;
+    }
+    .patate img{
+        max-width: 386px;
+        width: 90%;
+        height: auto;
+    }
+    .truc{
+        max-width: 386px;
+        width: 90%;
+    }
+    .truc img{
+        max-width: 386px;
+        width: 90%;
+        height: auto;
+    }
+    .navigation{
+        display: flex;
+        flex-direction: column;
+       
+    }
+    .groupe{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+    .menu1{
+        display: none;
+    }
+    .contact ul{
+        padding-left: 0;
+    }
+    .reseau ul{
+        padding-left: 0;
+    }
+    .panier{
+        display: none;
+    }
+    h2{
+        font-size: 24px;
+    }
+    h3{
+        font-size: 20px;
+    }
+    .similaire h3{
+       margin: auto;
+    }
+    .similaire h3::before{
+        content: none;
+    }
+
+    /*contact*/
+    
+    .localisation{
+        display: flex;
+        flex-direction: column;
+    }
+    .info{
+        margin: auto;
+    }
+    textarea, input, iframe{
+        max-width: 100%;
+    }
+    label{
+        display: block;
+        width: 0;
+        margin-top: 30px;
+    }
+    input[type=text]{
+        margin-top: 30px;
+    }
+    .formulaire{
+        padding-left: 20px;
+    }
+    .formulaire h3::before{
+        content: none;
+    }
+    
+    .col2{
+        flex-direction: column;
+        justify-content: flex-start;
+       
+    }
+
+    .droite{
+        margin-top: 2rem;
+    }
+    
+    .adroite{
+      justify-content: flex-start;
+    
+    }
+}
